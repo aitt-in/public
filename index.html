@@ -2,7 +2,6 @@
 .hide{ font-size: 0; position: fixed; top: -99999px; left: -99999px; }
 
 </style>
-<body onload="getElementById('ll').click()">
  
  <span id="displaySeconds" class="hide">1</span>
  
@@ -42,9 +41,8 @@ background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);}
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 25%;
+.column { float: left;
+  width: 50%;
 padding: 8px;
 }
 
@@ -64,30 +62,56 @@ padding: 8px;
 
 h6 { font-size: 15px; }
 h2 { font-size: 30px; padding-top: 12px; }
+
+.width {   float: left; width: 50%; }
+
+@media only screen and (max-width: 600px) {
+.width50 { width: 100%; }
+}
+
+.mw-fixed { max-width: 1180px; margin: auto; }
+
 </style>
-
-<div class="row">
-  <div class="column"><div class="card1">
-    <h6>CTS MOCKS</h6>
-    <h2 id="cts_c"></h2> 
- </div></div>
-
-  <div class="column"><div class="card2">
-    <h6>CITS MOCKS</h6>
-    <h2 id="cits_c"></h2>
-  </div></div>
  
-  <div class="column"><div class="card3">
-    <h6>MOBILE</h6>
-    <h2 id="mobile_c"></h2>
-  </div></div>
+<section class="row mw-fixed">
 
-  <div class="column"><div class="card4">
-    <h6>DESKTOP</h6>
-    <h2 id="desktop_c"></h2>
-  </div></div>
+<div class="width50">
+
+       <div class="column">
+              <div class="card1">
+                      <h6>CTS MOCKS</h6>
+                      <h2 id="cts_c"></h2> 
+              </div>
+       </div>
+
+       <div class="column">
+               <div class="card2">
+                      <h6>CITS MOCKS</h6>
+                      <h2 id="cits_c"></h2>
+               </div>
+        </div>
+ 
+</div>
+
+
+<div class="width50">
+           <div class="column">
+                  <div class="card3">
+                            <h6>MOBILE</h6>
+                            <h2 id="mobile_c"></h2>
+                  </div>
+            </div>
+
+          <div class="column">
+                 <div class="card4">
+                             <h6>DESKTOP</h6>
+                             <h2 id="desktop_c"></h2>
+                 </div>
+           </div>
 
 </div>
+ 
+</section>
 
 
 
