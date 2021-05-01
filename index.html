@@ -42,7 +42,6 @@ background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);}
 }
 
 .column { float: left;
-  width: 50%;
 padding: 8px;
 }
 
@@ -63,10 +62,14 @@ padding: 8px;
 h6 { font-size: 15px; }
 h2 { font-size: 30px; padding-top: 12px; }
 
-.width {   float: left; width: 50%; }
+@media only screen and (min-width: 600px) {
+.width {  float: left; width: 50%; }
+.column {  width: 25%; }
+}
 
 @media only screen and (max-width: 600px) {
 .width50 { width: 100%; }
+.column { width: 50%; }
 }
 
 .mw-fixed { max-width: 1180px; margin: auto; }
