@@ -1,23 +1,153 @@
+<style>
+.hide{ font-size: 0; position: fixed; top: -99999px; left: -99999px; }
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>total</th>
-    </tr>
-  </thead>
+</style>
+<body onload="getElementById('ll').click()">
+ 
+ <span id="displaySeconds" class="hide">1</span>
+ 
+<table class="table table-striped hide" id="output"> 
+ 
   <tbody id="results"></tbody>
 </table>
+     
+
+<style>
+* { font-family: sans-serif; }
+
+html, body {
+  background-color: #f3f3f9; 
+}
+
+.card1 { 
+background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+}
+
+.card2 {
+background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+}
+
+.card3 {
+background:linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);}
+
+.card4 {
+background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);}
+</style>
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* { margin: 0;
+  box-sizing: border-box;
+}
 
+.column {
+  float: left;
+  width: 25%;
+padding: 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+.card1, .card2, .card3, .card4 {  color: #ffffff;
+   padding-top: 22px!important;
+   padding-bottom: 25px!important; 
+   text-align: center;
+   padding: 8px; border-radius: 0.625rem;
+   box-shadow:  0 10px 80px rgba(0, 0, 0, 0.08);
+ }
+
+h6 { font-size: 15px; }
+h2 { font-size: 30px; padding-top: 12px; }
+</style>
+
+<div class="row">
+  <div class="column"><div class="card1">
+    <h6>CTS MOCKS</h6>
+    <h2 id="cts_c"></h2> 
+ </div></div>
+
+  <div class="column"><div class="card2">
+    <h6>CITS MOCKS</h6>
+    <h2 id="cits_c"></h2>
+  </div></div>
+ 
+  <div class="column"><div class="card3">
+    <h6>MOBILE</h6>
+    <h2 id="mobile_c"></h2>
+  </div></div>
+
+  <div class="column"><div class="card4">
+    <h6>DESKTOP</h6>
+    <h2 id="desktop_c"></h2>
+  </div></div>
+
+</div>
+
+
+
+<script>
+   var count = 0; // Number of remaining seconds.
+   var counter; // Handle for the countdown event.
+   
+   function start() {
+    counter = setInterval(timer, 1);
+   }
+
+   function timer() {
+    var output = document.getElementById("displaySeconds");
+    output.innerHTML = count;
+     count--;
+    
+    // Check if the counter has reached zero.
+    if (count < 0) { // If the counter has reached zero...
+     // Stop the counter.
+     clearInterval(counter);
+     
+     // Start the download.
+    document.getElementById("ll").click();
+     return;
+    }
+   }  
+   // Start the countdown timer when the page loads. 
+   window.addEventListener("load", start, false);
+  </script>
+<button id="ll" onclick="op()" class="hide"></button>
+ 
+<script>
+
+function op() {
+  cts_m = document.getElementById("output").rows[1].cells[1].innerText;
+  document.getElementById("cts_c").innerHTML = cts_m;
+
+  cits_m = document.getElementById("output").rows[2].cells[1].innerText;
+  document.getElementById("cits_c").innerHTML = cits_m;
+
+  mobile_m = document.getElementById("output").rows[3].cells[1].innerText;
+  document.getElementById("mobile_c").innerHTML = mobile_m;
+
+  desktop_m = document.getElementById("output").rows[4].cells[1].innerText;
+  document.getElementById("desktop_c").innerHTML = desktop_m;
+
+
+
+}
+</script>
+
+
+ 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script>
 // Format numbers
 function addCommas(nStr) {
   nStr += "";
-  var x = nStr.split(".");
+  var x = nStr.split("."); 
   var x1 = x[0];
   var x2 = x.length > 1 ? "." + x[1] : "";
   var rgx = /(\d+)(\d{3})/;
@@ -43,21 +173,23 @@ $.ajax({
   }
 });
 
-// Begin Markup
-window.onload = function() {
-  table = "";
+// Begin Markup 
+window.onload = function() { 
+  table = ""; 
   $x = 0;
-
+ 
   // Loop through sheet rows
   theSheet.feed.entry.forEach(function(row) {
-    $x++;
+    $x++; 
 
-    // Get Salesmen's Sales Totals
-    var total= parseFloat(row.gsx$total.$t);
-
+    // Get Salesmen's Sales Totals 
+    var total= parseFloat(row.gsx$column1.$t);
+    var total2= parseFloat(row.gsx$column2.$t); 
+ 
 
     tableRow = "<tr>";
-    tableRow += "<td>" + row.gsx$total.$t + "</td>";
+    tableRow += "<td>" + row.gsx$column1.$t + "</td>";
+    tableRow += "<td>" + row.gsx$column2.$t + "</td>";
     tableRow += "</tr>";
     table += tableRow;
   });
