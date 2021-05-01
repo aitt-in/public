@@ -76,6 +76,17 @@ h2 { font-size: 30px; padding-top: 12px; }
 
 </style>
  
+
+
+<section class="shadow" style="text-align: center; padding: 32px; margin-bottom: 18px; background-color: #ffffff; box-shadow: 0px 12px 34px -2px #d2d2f2;">
+
+<span style="color: #222222; font-size: 14px;">TOTAL MOCKS COMPLETED</span>
+<h6 style="color: black; font-size: 30px; padding-top: 12px;" id="total_c"></h6>
+
+</section>
+
+
+
 <section class="row mw-fixed">
 
 <div class="width50">
@@ -149,6 +160,9 @@ h2 { font-size: 30px; padding-top: 12px; }
 <script>
 
 function op() {
+   total_m = document.getElementById("output").rows[0].cells[1].innerText;
+  document.getElementById("total_c").innerHTML = total_m;
+
   cts_m = document.getElementById("output").rows[1].cells[1].innerText;
   document.getElementById("cts_c").innerHTML = cts_m;
 
