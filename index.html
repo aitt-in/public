@@ -252,7 +252,7 @@ html, body {
 
 
 .column1 { float: left; margin-top: 22px;
-padding: 8px; width: 33.33%;
+padding: 8px; 
 text-align: center;
 }
 
@@ -268,7 +268,13 @@ text-align: center;
 background-color: white; 
 }
 
+@media only screen and (max-width: 600px) {
+  .column1 { width: 100%; }
+}
 
+@media only screen and (min-width: 600px) {
+.column1 { width: 33.33%; }
+}
 </style>
 
 
