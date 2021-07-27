@@ -32,7 +32,7 @@ border-bottom: 1px solid #dadce0;  background-color: white;
 .topnav a {
   float: left;
   display: block;
-  color: #1b326c;
+  color: #1b326c; font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
