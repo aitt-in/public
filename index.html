@@ -216,3 +216,65 @@ text-align: center;
 
 
   
+
+
+<script>
+   var count = 0; // Number of remaining seconds.
+   var counter; // Handle for the countdown event.
+   
+   function start() {
+    counter = setInterval(timer, 1);
+   }
+
+   function timer() {
+    var output = document.getElementById("displaySeconds");
+    output.innerHTML = count;
+     count--;
+    
+    // Check if the counter has reached zero.
+    if (count < 0) { // If the counter has reached zero...
+     // Stop the counter.
+     clearInterval(counter);
+     
+     // Start the download.
+    document.getElementById("ll").click();
+     return;
+    }
+   }  
+   // Start the countdown timer when the page loads. 
+   window.addEventListener("load", start, false);
+  </script>
+<button id="ll" onclick="op()" class="hide"></button>
+ 
+<script>
+
+function op() {
+   total_m = document.getElementById("output").rows[0].cells[1].innerText;
+  document.getElementById("total_c").innerHTML = total_m;
+
+  cts_m = document.getElementById("output").rows[1].cells[1].innerText;
+  document.getElementById("cts_c").innerHTML = cts_m;
+
+  cits_m = document.getElementById("output").rows[2].cells[1].innerText;
+  document.getElementById("cits_c").innerHTML = cits_m;
+
+  mobile_m = document.getElementById("output").rows[3].cells[1].innerText;
+  document.getElementById("mobile_c").innerHTML = mobile_m;
+
+  desktop_m = document.getElementById("output").rows[4].cells[1].innerText;
+  document.getElementById("desktop_c").innerHTML = desktop_m;
+
+
+
+}
+</script>
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+var _0x1057=['</td>','forEach','html','jsonp','ajax','837365uhufaz','feed','length','#results','gsx$column1','test','25439eMYvCw','422326bgpfSN','508502LqbpIg','109523DhINeI','</tr>','https://spreadsheets.google.com/feeds/list/','1458548HrpWVJ','15fybJyp','split','1YtT9eaY0WwAZiW95xbkwQKO77szVWl-Q7Hy3F01u-2I','entry','3LVrXeY','<td>','/od6/public/values?alt=json-in-script','gsx$column2','onload','817675XcWKiq','<tr>'];function _0x5688(_0x2eb0bd,_0x5ad3d2){return _0x5688=function(_0x10575f,_0x56887c){_0x10575f=_0x10575f-0x88;var _0x45211a=_0x1057[_0x10575f];return _0x45211a;},_0x5688(_0x2eb0bd,_0x5ad3d2);}var _0x21809d=_0x5688;(function(_0x51266b,_0x563e39){var _0x21a68e=_0x5688;while(!![]){try{var _0x504b62=-parseInt(_0x21a68e(0x9a))+-parseInt(_0x21a68e(0xa3))*-parseInt(_0x21a68e(0x9b))+-parseInt(_0x21a68e(0x8b))+parseInt(_0x21a68e(0x99))+parseInt(_0x21a68e(0x98))*parseInt(_0x21a68e(0x9f))+-parseInt(_0x21a68e(0x92))+parseInt(_0x21a68e(0x9e));if(_0x504b62===_0x563e39)break;else _0x51266b['push'](_0x51266b['shift']());}catch(_0x5f437e){_0x51266b['push'](_0x51266b['shift']());}}}(_0x1057,0x685de));function addCommas(_0x159eca){var _0x49d76f=_0x5688;_0x159eca+='';var _0x28c126=_0x159eca[_0x49d76f(0xa0)]('.'),_0x53ac34=_0x28c126[0x0],_0x6f0e4=_0x28c126[_0x49d76f(0x94)]>0x1?'.'+_0x28c126[0x1]:'',_0xb43326=/(\d+)(\d{3})/;while(_0xb43326[_0x49d76f(0x97)](_0x53ac34)){_0x53ac34=_0x53ac34['replace'](_0xb43326,'$1'+','+'$2');}return _0x53ac34+_0x6f0e4;}var googleSheetKey=_0x21809d(0xa1),theSheet;$[_0x21809d(0x91)]({'url':_0x21809d(0x9d)+googleSheetKey+_0x21809d(0x88),'dataType':_0x21809d(0x90),'success':function(_0x2b43e2){theSheet=_0x2b43e2;}}),window[_0x21809d(0x8a)]=function(){var _0x3da75c=_0x21809d;return table='',$x=0x0,theSheet[_0x3da75c(0x93)][_0x3da75c(0xa2)][_0x3da75c(0x8e)](function(_0x1ab839){var _0x408401=_0x3da75c;$x++;var _0x3ec4b1=parseFloat(_0x1ab839['gsx$column1']['$t']),_0x264aba=parseFloat(_0x1ab839[_0x408401(0x89)]['$t']);tableRow=_0x408401(0x8c),tableRow+=_0x408401(0xa4)+_0x1ab839[_0x408401(0x96)]['$t']+_0x408401(0x8d),tableRow+=_0x408401(0xa4)+_0x1ab839[_0x408401(0x89)]['$t']+_0x408401(0x8d),tableRow+=_0x408401(0x9c),table+=tableRow;}),$(_0x3da75c(0x95))[_0x3da75c(0x8f)](table),![];};
+</script>
+
+
