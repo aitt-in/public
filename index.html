@@ -47,6 +47,142 @@
   <div class="content mw-fixed padding">
 
 
+<style>
+.hide{ font-size: 0; position: fixed; top: -99999px; left: -99999px; }
+
+</style>
+ 
+ <span id="displaySeconds" class="hide">1</span>
+ 
+<table class="table table-striped hide" id="output"> 
+ 
+  <tbody id="results"></tbody>
+</table>
+     
+
+<style>
+
+
+.card1 { 
+background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+}
+
+.card2 {
+background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+}
+
+.card3 {
+background:linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);}
+
+.card4 {
+background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);}
+
+
+.column{ float: left;
+padding: 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+.card1, .card2, .card3, .card4 {  color: #ffffff;
+   padding-top: 22px!important;
+   padding-bottom: 25px!important; 
+   text-align: center;
+   padding: 8px; border-radius: 5px;
+   box-shadow:  0 10px 80px rgba(0, 0, 0, 0.08);
+ }
+
+h6 { font-size: 15px; }
+h2 { font-size: 30px; padding-top: 12px; }
+
+@media only screen and (min-width: 600px) {
+.width {  float: left; width: 50%; }
+.column {  width: 25%; }
+}
+
+@media only screen and (max-width: 600px) {
+.width50 { width: 100%; }
+.column { width: 50%; }
+}
+
+.mw-fixed { max-width: 1080px; margin: auto; }
+.column-half { float: left; width: 50%; padding: 8px;
+text-align: center;
+}
+
+.half-c { border-radius: 5px; border: 1px solid #ddd; } 
+</style>
+ 
+
+
+
+<section class="row mw-fixed" style="display: none;">
+
+<div class="column-half">
+<div class="half-c">
+
+ <span style="color: #222222; font-size: 14px;">TOTAL MOCKS COMPLETED</span>
+<h6 style="color: black; font-size: 30px; padding-top: 5px;" id="total_c"></h6>
+
+</div>
+</div>
+
+
+<div class="column-half">
+<div class="half-c">
+
+<span style="color: #222222; font-size: 14px;">Self Hosted</span>
+<h6 style="color: black; font-size: 30px; padding-top: 5px;">MOCK TEST</h6>
+</div></div>
+
+
+</section> 
+
+
+
+<section class="row mw-fixed">
+
+<div class="width50">
+
+       <div class="column">
+              <div class="card1">
+                      <h6>CTS MOCKS</h6>
+                      <h2 id="cts_c"></h2> 
+              </div>
+       </div>
+
+       <div class="column">
+               <div class="card2">
+                      <h6>CITS MOCKS</h6>
+                      <h2 id="cits_c"></h2>
+               </div>
+        </div>
+ 
+</div>
+
+
+<div class="width50">
+           <div class="column">
+                  <div class="card3">
+                            <h6>MOBILE</h6>
+                            <h2 id="mobile_c"></h2>
+                  </div>
+            </div>
+
+          <div class="column">
+                 <div class="card4">
+                             <h6>DESKTOP</h6>
+                             <h2 id="desktop_c"></h2>
+                 </div>
+           </div>
+
+</div>
+ 
+</section>
 
 
 <p>The header will stick to the top when you reach its scroll position.</p>
