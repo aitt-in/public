@@ -43,8 +43,8 @@ border-bottom: 1px solid #dadce0;  background-color: white;
 }
 
 .topnav a:hover {
-  background-color: #1b326c;
-  color: #fff;
+  background-color: #fff;
+  color: #1b326c;
 }
 
 
@@ -73,9 +73,4 @@ border-bottom: 1px solid #dadce0;  background-color: white;
     text-align: left;
   }
          
-         
-         .topnav .icon:hover {
-           color: #1b326c;
-           background-color: #fff;
-         }
 }
