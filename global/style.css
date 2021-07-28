@@ -31,7 +31,8 @@ border-bottom: 1px solid #dadce0;  background-color: white;
   overflow: hidden;
 }
 
-.topnav a {
+.topnav a { font-family: 'Open Sans', sans-serif!important;
+
   float: left;
   display: block;
   color: #1b326c; font-weight: bold;
