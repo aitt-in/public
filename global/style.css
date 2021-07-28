@@ -42,12 +42,11 @@ border-bottom: 1px solid #dadce0;  background-color: white;
   font-size: 17px;
 }
 
-.topnav .icon:hover {
+.topnav .icon:focus {
   background-color: #fff;
   color: #1b326c;
 }
 
-.icon:focus {           background-color: white!important;  }
 
 .topnav .icon {
   display: none;
