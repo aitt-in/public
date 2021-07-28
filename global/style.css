@@ -47,6 +47,12 @@ border-bottom: 1px solid #dadce0;  background-color: white;
   color: #1b326c;
 }
 
+.topnav a:hover {
+  background-color: #1b326c;
+  color: #fff;
+}
+
+
 
 .topnav .icon {
   display: none;
