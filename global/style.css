@@ -47,6 +47,7 @@ border-bottom: 1px solid #dadce0;  background-color: white;
   color: #1b326c;
 }
 
+.icon:focus {           background-color: white!important;  }
 
 .topnav .icon {
   display: none;
