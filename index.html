@@ -37,12 +37,13 @@
 
 </div></div>
 
-
+<!--
 <section style="background: rgb(237, 249, 254);">
  vbjhfgbfghbfg
  <br /> fghfgh <br />fghfgh  <br />fghfgh  <br />fghfg  <br />fghfg  <br /> fghfg <br /> fghfg <br />  gfgfh<br /> gfhfgh <br />  fhfgh<br /> ghg <br />  ghfgh<br /> hghfgh <br /> hfgbnhfgh <br /> fghgfh <br /> fhfghf <br />  <br />  <br />  <br />  <br />  
  
 </section>
+-->
 
 
   
@@ -270,6 +271,8 @@ H4, H5 { font-size: 15px; }
 </style>
 
 
+
+<!--
     <div class="curved-div upper">
       <svg viewBox="0 0 1440 320"><path fill="#ddd" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,117.3C480,128,600,192,720,218.7C840,245,960,235,1080,229.3C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>  
@@ -348,7 +351,7 @@ H4, H5 { font-size: 15px; }
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 </div>
 </div>
-
+-->
 
 
   
@@ -384,19 +387,27 @@ H4, H5 { font-size: 15px; }
  
 <script>
 
-function op() {
+function op() {    
    total_m = document.getElementById("output").rows[0].cells[1].innerText;
   document.getElementById("total_c").innerHTML = total_m;
 
+  cts_m = document.getElementById("output").rows[1].cells[0].innerText;
+  document.getElementById("cts_txt").innerHTML = cts_m;
   cts_m = document.getElementById("output").rows[1].cells[1].innerText;
   document.getElementById("cts_c").innerHTML = cts_m;
 
+  cits_m = document.getElementById("output").rows[2].cells[0].innerText;
+  document.getElementById("cits_txt").innerHTML = cits_m;
   cits_m = document.getElementById("output").rows[2].cells[1].innerText;
   document.getElementById("cits_c").innerHTML = cits_m;
 
+  mobile_m = document.getElementById("output").rows[3].cells[0].innerText;
+  document.getElementById("mobile_txt").innerHTML = mobile_m;
   mobile_m = document.getElementById("output").rows[3].cells[1].innerText;
   document.getElementById("mobile_c").innerHTML = mobile_m;
 
+  desktop_m = document.getElementById("output").rows[4].cells[0].innerText;
+  document.getElementById("desktop_txt").innerHTML = desktop_m; 
   desktop_m = document.getElementById("output").rows[4].cells[1].innerText;
   document.getElementById("desktop_c").innerHTML = desktop_m;
 
