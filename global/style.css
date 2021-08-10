@@ -9,7 +9,7 @@
  
 
 .header { 
-border-top: 1px solid #dadce0;
+border-top: 1px solid #dadce0;  z-index: 99!important; 
 border-bottom: 1px solid #dadce0;  background-color: white;
 }
 
