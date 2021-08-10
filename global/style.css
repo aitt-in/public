@@ -27,7 +27,7 @@ border-bottom: 1px solid #dadce0;  background-color: white;
   .header-img { width: 180px; }
 
 
-.topnav {
+.topnav { z-index: 99!important; 
   overflow: hidden;
 }
 
