@@ -83,3 +83,11 @@ border-bottom: 1px solid #dadce0;  background-color: white;
 
 
 footer { font-family: 'Open Sans', sans-serif!important; }
+
+
+
+
+
+
+/* CHANGE THE COLOR OF FOOTER NAV LINK */
+.bottom-nav { color: white!important; }
