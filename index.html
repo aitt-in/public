@@ -49,6 +49,38 @@
 
 
 
+<style>
+.data-c { text-align: center; background-color: #233373; color: white; padding: 10px; }
+#e1 { font-size: 32px; letter-spacing: 1px; margin-bottom: 3px; font-weight: bold;}
+#e2 { font-size: 18px; text-transform: uppercase; }
+</style>
+
+<section class="data-c">
+<p id="e1"></p>
+<p id="e2"></p>
+</section>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+
+<script>
+$(document).ready(function(){
+  $.get( "https://sheets.googleapis.com/v4/spreadsheets/1Fl4BMks7rWdJ6JxeXFAuKccQVa0y2xWbvTQ2nOnRgJc/values/Sheet1!A2:B2?key=AIzaSyB5WTjIR5OZt108xl9uQApzeoNRWuMyYRE", function(sheet1) {
+
+  for(i=0;i<sheet1.values.length;i++){
+    var data = sheet1.values[i][0];
+    var tagline= sheet1.values[i][1];
+ 
+  $("#e1").text(data),
+  $("#e2").text(tagline);
+ 
+     
+  }
+});
+});
+ 
+</script>
 
 
 
