@@ -16,17 +16,6 @@
 
 
 
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'/>
-
-<script>
-$(window).on(&#39;load&#39;, function() {
-  $(&#39;#status&#39;).fadeOut();
-  $(&#39;#preloader&#39;).delay(350).fadeOut(&#39;slow&#39;);
-  $(&#39;body&#39;).delay(350).css({&#39;overflow&#39;:&#39;visible&#39;});
-})
-</script>
-
 <div class="top-container">
   
   <div class="mw-fixed padding">
@@ -55,6 +44,75 @@ $(window).on(&#39;load&#39;, function() {
 
 
 
+
+  
+  <link href='https://asiisachin.github.io/public/cdn/slideshow/slideshow.css' rel='stylesheet'/>
+<style> 
+    :root{--swiper-theme-color:#1b326c; }
+    
+    .swiper-button-next:after, .swiper-button-prev:after { display: none; }
+    
+    .swiper-pagination-bullet { width: 30px; border-radius: 0!important; height: 3px; }  
+          
+     
+
+        </style>
+        
+        
+        <section class='slideshow-column'>
+      <div class='swiper-container mw-fixed'>
+      <div class='swiper-wrapper'>
+        
+      
+      <div class='swiper-slide'>
+<img src="img/slider-aitt-skills-01.jpg" style="width: 100%;" />
+      </div>
+      
+
+      <div class='swiper-slide'>
+<img src="img/slider-aitt-skills-02.jpg" style="width: 100%;" />
+      </div>
+      
+
+      
+
+      
+        
+      </div>
+      <div class='swiper-pagination'></div>
+      <div class='swiper-button-next'></div>
+      <div class='swiper-button-prev'></div>
+      </div>
+        
+      </section>
+  
+  
+
+ 
+
+
+      <script src='https://asiisachin.github.io/public/cdn/slideshow/slideshow.js'></script>
+
+
+      <script>
+          var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        </script>     
+        
 
 
 
