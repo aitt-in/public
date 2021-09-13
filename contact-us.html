@@ -56,7 +56,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
-.column60 { font-family: 'Open Sans', sans-serif; }
 
 .row:after {
   content: "";
@@ -64,9 +63,17 @@
   clear: both;
 }
 
-.column{ float: left; }
-.column40 { width: 40%; }
-.column60 { width: 60%; text-align: center; color: #233373; font-weight: bold; font-size: 18px;}
+* { margin: 0; box-sizing: border-box;}
+
+.column2{ 
+     float: left;  
+     width: 50%; 
+     text-align: center; 
+     color: #233373; 
+     font-weight: bold; 
+     font-size: 18px;
+     font-family: 'Open Sans', sans-serif;
+ }
 
 .gh-profile {
      font-family: 'Oswald', sans-serif; 
@@ -83,7 +90,7 @@
 .fa-icon { font-size: 22px; margin-bottom: 5px; }
 
 @media only screen and (max-width: 600px) {
-    .column40, .column60 { width: 100%;}
+    .column2 { width: 100%;}
     .bottom-fa { margin-top: 10px; }
 }
 </style>
@@ -94,11 +101,11 @@
 <center>
 <section class="row mw-fixed" style="margin-bottom: 60px;">
 
-<div class="column column40">
+<div class="column2">
 <img src="https://www.aitt.in/img/contact-img.jpg" style="width: 100%;" />
 </div>
 
-<div class="column column60">
+<div class="column2">
 
      <a href="https://www.github.com/asiisachin">
   <div class="gh-profile">
@@ -110,6 +117,9 @@
 
 <br /> <br/> <br/>
 
+<p style="color: black;">feel free to contact us if you have any suggestion / complaint </p>
+
+<br />
 <i class="fab fa-whatsapp fa-icon"></i> <br />
 +91 9457296992
 
@@ -117,6 +127,8 @@
 <i class="far fa-envelope fa-icon bottom-fa"></i>
 <br />
 sachin@aitt.in
+
+
 </div>
 
 </section>
