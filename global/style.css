@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
 
-* { margin: 0; box-sizing: border-box; margin: auto; font-family: 'Open Sans', sans-serif;
+* { margin: 0 auto; box-sizing: border-box; margin: auto; font-family: 'Open Sans', sans-serif;
          -webkit-tap-highlight-color: transparent;
 
  }
