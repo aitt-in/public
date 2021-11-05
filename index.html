@@ -13,6 +13,9 @@
 <link href='https://test.aitt.in/favicon.ico' rel='icon' type='image/x-icon'/>
  <link rel="stylesheet" href="https://www.aitt.in/global/style.css" />  
 
+      <link rel="icon" href="icons/192x192.png" type="image/png" sizes="192x192" />
+      <link rel="icon" href="icons/180x180.png" type="image/png" sizes="180x180" />
+	<link rel="manifest" href="manifest.json" />
 
 <meta content='Prepare yourself with the best practice for All India Trade Tests (AITT) which are conducted by the DGT under the aegis of National Council for Vocational Training (NCVT) for CTS / ATS / CITS courses.' name='description'/>
 <meta content='Prepare yourself with the best practice for All India Trade Tests (AITT) which are conducted by the DGT under the aegis of National Council for Vocational Training (NCVT) for CTS / ATS / CITS courses.' property='og:description'/>
@@ -163,6 +166,18 @@ $(document).ready(function(){
   }
 });
 });
+ 
+ 
+ 
+  	if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('sw.js').then(function(registration) {
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+	}
  
 </script>
 
