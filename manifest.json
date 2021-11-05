@@ -3,16 +3,16 @@
   "name": "aitt.in",
   "icons": [
     {
-      "src": "icon/192x192.png",
+      "src": "icons/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },    {
-      "src": "icon/256x256.png",
+      "src": "icons/180x180.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "180x180"
     },
     {
-      "src": "icon/512x512.png",
+      "src": "icons/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
